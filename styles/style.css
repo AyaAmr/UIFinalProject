@@ -125,7 +125,8 @@ body {
 }
 /* Section3 Nouran Mamdouh 25-4003 */
 .title-section3{
-  margin-top: 90px;
+  margin-top: 90px; 
+  margin-bottom: -50px; 
   width: 210px;
   height: 80px;
   text-transform: uppercase;
@@ -141,25 +142,44 @@ body {
 }
 .title-section3 p{
   margin-top: 0px;
-  color: #3f3f3f;
+  color: #545454;
 }
 .items div{
   display: inline-block;
-  font-size: 10px;
+  font-size: 11px;
   color: #000000;
 }
 .items h1{
-  color: #3f3f3f;
-  font-size: 10px;
-  margin-left: 90px;
+  margin-top: 40px;
+  color: #545454;
+  font-size: 15px; 
+  margin-left: 70px;
 }
 .items p{
-  margin-top: 0px;
+  margin-top: -2px;
   width: 200px;
-  margin-left: 90px;
+  margin-left: 70px;
+  color: #7e7e7e;
 }
 .items img{
+  margin-top: 40px; 
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
+}
+.more-features{
+  margin-top: 30px;
+  margin-left: 350px;
+}
+.more-features a{
+  text-transform: uppercase;
+  color: white;
+  background: #52C9E0;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 8px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 6px;
+  
 }
