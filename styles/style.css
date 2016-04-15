@@ -108,6 +108,11 @@ Source: https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/
   border: 0;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
 .wrapper {
   background-color: #ffffff;
 }
