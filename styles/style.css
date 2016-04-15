@@ -123,3 +123,27 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+/* Section3 Nouran Mamdouh 25-4003 */
+.title-section3{
+  margin-top: 90px;
+  width: 210px;
+  height: 80px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+.title-section3 h1{
+  color: #000000;
+  margin-bottom: 2px;
+}
+.title-section3 p{
+  margin-top: 0px;
+  color: #7e7e7e;
+}
+.items{
+  display: inline-block;
+}
+.items img{
+  width: 70px;
+  height: 70px;
+}
