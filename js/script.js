@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   for (var i = 0; i < logosNum; i++) {
     if(i==0) {
-      $('.logos-bullets').append( "<button class='active'></button>" );
+      $('.logos-bullets').append( "<button class='bullet-active'></button>" ); //set the first dot to active by default
     }else{
       $('.logos-bullets').append( "<button></button>" );
     }
@@ -26,8 +26,22 @@ $(document).ready(function(){
 
 
   /* On client logo click show client's qoute */
+  $( ".logos-bullets button" ).click(function() {
+    var childNum = $(this).index() + 1;
+    handleClientsLogosSlider (childNum);
+  });
+
   $( ".clients-logos div" ).click(function() {
     var childNum = $(this).index() + 1;
+    handleClientsLogosSlider (childNum);
+
+  });
+
+});
+
+function handleClientsLogosSlider (childNum) {
+  if( childNum <= 3) { //A silly if condition to hande the cases where child element doesn't exist, this should be more dynamic
+
     $('.clients-logos div > .active').hide(); //Hide all other active logos ( normalize )
     $('.clients-logos div > .normal').show(); //Show All original logos ( normalize )
     $('.clients-logos div:nth-child('+childNum+') > .normal').hide(); //Hide original logo of the clicked element
@@ -35,9 +49,10 @@ $(document).ready(function(){
     $('.clients-qoutes div').hide();
     $('.clients-qoutes div:nth-child('+childNum+')').show();
     $('.clients-qoutes div:nth-child('+childNum+') div').show(); //To show author div
-  });
-
-});
+    $('.logos-bullets button').removeClass('bullet-active'); //remove active class from all buttons if exists
+    $('.logos-bullets button:nth-child('+childNum+')').addClass('bullet-active'); //Add active class to currently clicked child
+  }
+}
 
 
 

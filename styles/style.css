@@ -353,7 +353,7 @@ button.default:hover {
   border-radius: 50%;
 }
 
-.logos-bullets button.active {
+.logos-bullets button.bullet-active {
   background: #F59331;
 }
 
