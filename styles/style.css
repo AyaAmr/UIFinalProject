@@ -334,3 +334,11 @@ button.default:hover {
 .clients-logos {
   margin-top: 100px;
 }
+
+.testimonials blockquote > .qoute-author span {
+  color: #F59331;
+}
+
+.qoute-author {
+  margin: 40px 0;
+}

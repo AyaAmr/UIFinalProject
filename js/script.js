@@ -18,6 +18,7 @@ $(document).ready(function(){
     $('.clients-logos div:nth-child('+childNum+') > .active').show(); //Show the current clicked as active
     $('.clients-qoutes div').hide();
     $('.clients-qoutes div:nth-child('+childNum+')').show();
+    $('.clients-qoutes div:nth-child('+childNum+') div').show(); //To show author div
   });
 
 });
