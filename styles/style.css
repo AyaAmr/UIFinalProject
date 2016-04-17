@@ -141,12 +141,14 @@ body {
   text-transform: uppercase;
   font-size: 10px;
   font-family: 'Raleway';
+  margin-left: 10px;
 }
 .title-section3 h1{
   color: #000000;
   margin-bottom: -8px;
   font-weight: bold;
 }
+span { font-weight: bold; }
 .title-section3 p{
   color: #545454;
 }
@@ -154,7 +156,6 @@ body {
   display: inline-block;
   font-size: 11px;
   color: #000000;
-  margin-left: -10px;
 }
 .items h1{
   margin-top: 40px;
