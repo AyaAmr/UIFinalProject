@@ -315,6 +315,11 @@ button.default:hover {
 }
 /* Testimonials */
 
+.testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .testimonials blockquote {
   font-style: italic;
   font-size: 15px;
@@ -333,6 +338,23 @@ button.default:hover {
 
 .clients-logos {
   margin-top: 100px;
+}
+
+.logos-bullets {
+  text-align: center;
+}
+
+.logos-bullets button {
+  width:  15px;
+  height: 15px;
+  margin: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.logos-bullets button.active {
+  background: #F59331;
 }
 
 .testimonials blockquote > .qoute-author span {

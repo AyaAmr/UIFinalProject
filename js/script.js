@@ -9,6 +9,22 @@ $(document).ready(function(){
 
   $('.clients-logos div:first-child > .normal').hide(); //Hide the normal logo version for the first slide
 
+
+  /* Get number of logos slides exist*/
+  var logosNum = $('.clients-logos').children().length;
+
+  $(".clients-logos").append( "<div class='logos-bullets'></div>" );
+
+  for (var i = 0; i < logosNum; i++) {
+    if(i==0) {
+      $('.logos-bullets').append( "<button class='active'></button>" );
+    }else{
+      $('.logos-bullets').append( "<button></button>" );
+    }
+  }
+
+
+
   /* On client logo click show client's qoute */
   $( ".clients-logos div" ).click(function() {
     var childNum = $(this).index() + 1;
