@@ -117,23 +117,88 @@ Source: https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/
   padding: 0;
   border: 0;
 }
-
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
 }
-
 .wrapper {
   background-color: #ffffff;
 }
-
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-
+/* Section3 Nouran Mamdouh 25-4003 */
+.section3{
+  padding: 90px; 
+}
+.title-section3{
+  margin-bottom: -50px; 
+  width: 210px;
+  height: 80px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: 'Raleway';
+}
+.title-section3 h1{
+  color: #000000;
+  margin-bottom: -8px;
+  font-weight: bold;
+}
+.title-section3 p{
+  color: #545454;
+}
+.items div{
+  display: inline-block;
+  font-size: 11px;
+  color: #000000;
+  margin-left: -10px;
+}
+.items h1{
+  margin-top: 40px;
+  color: #545454;
+  font-size: 15px; 
+  margin-left: 70px;
+}
+.items p{
+  margin-top: -2px;
+  margin-left: 70px;
+  color: #7e7e7e;
+}
+.items img{
+  margin-top: 40px; 
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.more-features{
+  margin-top: 30px;
+  margin-left: 440px;
+}
+.more-features a{
+  text-transform: uppercase;
+  color: white;
+  background: #52C9E0;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 8px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 6px;
+}
+.special-img {
+  width: 1056px;
+  text-align: right;
+  border-bottom: 0.5px solid #D4F1F7;
+  margin-top: 10px;
+}
+.special-img img {
+  width: 120px;
+  height: 60px;
+  margin-bottom: -4.5px;
+}
 /**** General Styles ****/
 .banner {
   height: 50px;
