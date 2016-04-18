@@ -255,3 +255,97 @@ button.default {
 button.default:hover {
   background-color: #178AA1;
 }
+.font-karla-uppercase-bold{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+button.sub-default{
+  font-family: 'Karla';
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #f7941d;
+  width: 140px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 38px;
+  text-transform: uppercase;
+}
+.contacting-container-title{
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  margin-bottom: -16px;
+}
+.contacting-container-subtitle{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #93a1a7;
+  margin-bottom: 30px;
+}
+.highlight-text{
+  color: #f7941d;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 5px 5px 0; /*modified margin instead of the one by Aya*/
+  color: #4d4d4d;
+}
+.section-sub-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 5px 5px 5px 0; /*modified margin instead of the one by Aya*/
+  color: #4d4d4d;
+}
+.section-body-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color: #4d4d4d;
+  line-height: 1.5;
+  margin-top: 40px;
+}
+.subsection-text-container{
+  padding-left: 25px;
+  display: inline-block;
+  position: absolute;
+  margin-top: -4px;
+}
+.subsection-body-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color: #4d4d4d;
+  line-height: 1.5;
+  margin-top: 0;
+}
+.subsection-title{
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 5px 5px 0;
+}
+.icon-services{
+  background: #e5eef0;
+  line-height: 2.3em;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+.icon-services:hover{
+  background-color: #f7941d;
+}
+.subsection-container{
+  position: relative;
+  height: 105px;
+  margin-top: 8px;
+}
+.subsection-container-button{
+  text-align: center;
+  margin-top: 4px;
+}
