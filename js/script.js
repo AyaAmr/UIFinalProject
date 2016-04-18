@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('.home-slider').slick({
-    dots: true
+    dots: true,
+    arrows: false,
   });
 
   $('.clients-qoutes div:not(:first-child)').hide(); //Hide All qoutes except the first one
