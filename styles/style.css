@@ -283,6 +283,40 @@ span { font-weight: bold; }
   margin-left: 20px;
 }
 
+footer {
+  position: relative;
+}
+footer .container:first-of-type {
+  border-top: 1px solid #e5eef0;
+  border-bottom: 1px solid #e5eef0;
+  padding-top: 75px;
+}
+footer .container:last-of-type {
+  text-align: center;
+}
+footer ul {
+  padding-left: 0px;
+}
+footer h1 {
+  margin: 0;
+}
+footer small{
+  height: 108px;
+  line-height: 108px;
+}
+
+footer .blue-tri {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+footer .orange-tri {
+  position: absolute;
+  bottom: 108px;
+  left: 0;
+}
+
+
 /**** Icons ****/
 .icon-container {
   display: inline-block;
@@ -301,6 +335,24 @@ span { font-weight: bold; }
   width: 8px;
   height: 8px;
   background: url("../images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.blue-tri {
+  width: 102px;
+  height: 71px;
+  background: url("../images/blue-tri.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.orange-tri {
+  width: 36px;
+  height: 26px;
+  background: url("../images/orange-tri.png");
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
