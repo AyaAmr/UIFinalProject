@@ -2,40 +2,6 @@
 /* Section3 Nouran Mamdouh 25-4003 */
 /**** General Styles ****/
 
-footer {
-  position: relative;
-}
-footer .container:first-of-type {
-  border-top: 1px solid #e5eef0;
-  border-bottom: 1px solid #e5eef0;
-  padding-top: 75px;
-}
-footer .container:last-of-type {
-  text-align: center;
-}
-footer ul {
-  padding-left: 0px;
-}
-footer h1 {
-  margin: 0;
-}
-footer small{
-  height: 108px;
-  line-height: 108px;
-}
-
-footer .blue-tri {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-footer .orange-tri {
-  position: absolute;
-  bottom: 108px;
-  left: 0;
-}
-
-
 .section3{
   padding: 90px;
 }
@@ -53,7 +19,7 @@ footer .orange-tri {
   margin-bottom: -8px;
   font-weight: bold;
 }
-span { font-weight: bold; }
+/*span { font-weight: bold; }*/
 .title-section3 p{
   color: #545454;
 }

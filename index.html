@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
-    <link rel="stylesheet" type="text/css" href="styles/general_style.css">
     <link rel="stylesheet" type="text/css" href="styles/components.css">
+    <link rel="stylesheet" type="text/css" href="styles/general_style.css">
   </head>
   <body>
     <h1 class="screen-reader">Business LTD Website</h1>
@@ -319,52 +319,60 @@
 <!--  -->
     <footer>
       <div class="container">
+        <h1 class="screen-reader">Site Map</h1>
         <div class="row">
-          <div class="col-2">
-            <div><a class="logo"></a></div>
+          <div class="col-2 icon-container">
+            <h1 class="logo"><span class="screen-reader">Business LTD logo</span></h1>
           </div>
-          <div class="col-2">
-            <h1>Menu</h1>
-            <ul>
-              <li><a>Home</a></li>
-              <li><a>About us</a></li>
-              <li><a>Features</a></li>
-              <li><a>Portfolio</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li><a>Services</a></li>
-              <li><a>Blog</a></li>
-              <li><a>BlogPages</a></li>
-              <li>
-                <a class="fb-icon"></a>
-                <a class="twitter-icon"></a>
-                <a class="gplus-icon"></a>
-              </li>
+          <div class="col-4">
+            <div class="row">
+              <h3>Menu</h3>
+              <div class="col-6">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">BlogPages</a></li>
+                  <li>
+                    <a href="#" class="fb-icon"></a>
+                    <a href="#" class="twitter-icon"></a>
+                    <a href="#" class="gplus-icon"></a>
+                  </li>
+                </ul>
+              </div><!-- /.col-6 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-4 -->
+          <div class="col-3">
+            <h3>Contanct</h3>
+            <ul class="contact-details">
+              <li><span>Address:</span> Geethanjali street</li>
+              <li>Second flor : 88569</li>
+              <li><span>Phone:</span> +988 9956 222</li>
+              <li><span>Email:</span> INFO@BUSINESS.COM</li>
             </ul>
           </div>
           <div class="col-3">
-            <h1>Contanct</h1>
-            <li>Address:</li>
-            <li>Phone:</li>
-            <li>Email:</li>
-          </div>
-          <div class="col-3">
-            <h1>News Letter</h1>
-            <form action="">
-              <label for="email">Sign up your News Letter</label>
-              <br>
-              <input id="email" type="text">
-              <button>Go</button>
+            <h3>News Letter</h3>
+            <form class="news-letter-form" action="" method="post" name="news-letter-form">
+                <label>Sign up your News Letter</label>
+                <input type="email" placeholder="Your e-mail">
+                <button type="submit">Go</button>
             </form>
           </div>
-        </div>
-      </div>
-      <div class="container">
-
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="copy-rights container">
+        <small>© 2015 business Ltd. allright reserved</small>
       </div>
     </footer>
+<!--  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
