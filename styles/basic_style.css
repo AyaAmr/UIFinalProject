@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /**** Clearing floats ****/
 .clear-fix::before,
 .clear-fix::after {
@@ -47,12 +51,12 @@ a {
 /* 1- This is an attribute selector */
 [class*='col-'] { /* 1 */
   float: left;
-  padding: 0 30px;
+  padding: 0 30px 0 0;
 }
 
 /* 1- Floats last ".col-" to the right */
 [class*='col-']:last-of-type { /* 1 */
-  padding-right: 30px;
+  padding-right: 0;
   float: right;
 }
 
@@ -130,6 +134,31 @@ body {
   padding: 0 15px;
 }
 
+section {
+  padding-top: 96px;
+  padding-bottom: 100px;
+}
+section h1,
+.section-title {
+  margin: 0;
+}
+section h1 + p,
+.section-sub-title { /*subtitle*/
+  margin: 5px 0;
+}
+.section-body-text {
+  margin: 29px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
 
 /**** Header ****/
 .banner {

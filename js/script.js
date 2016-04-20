@@ -2,6 +2,8 @@ $(document).ready(function(){
   $('.home-slider').slick({
     dots: true,
     arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
   });
 
   $('.clients-qoutes div:not(:first-child)').hide(); //Hide All qoutes except the first one

@@ -72,12 +72,12 @@
   margin-bottom: -4.5px;
 }
 
-
-
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /***** Slider *******/
 .home-slider {
   width: 100%;
   height: 750px;
+  margin-bottom: 0;
 }
 .home-slider > div {
   width: 100%;
@@ -85,20 +85,7 @@
   text-align: center;
   background:url('../images/slide.png') 50% 50% no-repeat no-repeat #CCCCCC;
 }
-
-.slide-title {
-  font-size: 48px;
-  text-transform: uppercase;
-  margin-top: 340px;
-  margin-bottom: 20px;
-}
-
-.slide-sub-title {
-  font-size: 14px;
-}
-
 /* home-slider Dots */
-
 .home-slider .slick-dots {
   position: absolute;
   bottom: 40px;
@@ -108,31 +95,92 @@
   list-style: none;
   text-align: center;
 }
+.slide-title {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-top: 340px;
+  margin-bottom: 20px;
+}
+.slide-sub-title {
+  font-size: 14px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /****** General Section Styles *******/
 
 .section-info {
   margin: 100px 0 40px 0;
 }
-.section-title {
+.section-title { /*l*/
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 5px;
+  color: #23282f;
 }
-
 .section-sub-title {
   font-size: 18px;
   text-transform: uppercase;
-  margin: 5px;
   color: #4d4d4d;
+}
+.section-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color: #4d4d4d;
+  line-height: 1.5;
+}
+.subsection-container{
+  position: relative;
+  padding: 25px 0;
+}
+.subsection-container:first-of-type {
+  padding-top: 0;
+}
+.subsection-text-container{
+  margin-top: -4px;
+}
+.subsection-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color: #4d4d4d;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.subsection-title{
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0px 5px 0;
+  margin: 0px;
+}
 
+section.startup-section{
+  padding-bottom: 0;
+}
+.startup-section .col-5 .subsection-container:first-of-type {
+  margin-top: 7px;
+}
+.startup-section button.default {
+  margin-top: 25px;
+}
+
+.icon-services{
+  background: #e5eef0;
+  text-align: center;
+  width: 67px;
+  height: 67px;
+  line-height: 67px;
+}
+.icon-services:hover{
+  background-color: #f7941d;
 }
 
 .colored-section { /*Add background color to section*/
   background: #e5eef0;
 
 }
+
 /* Testimonials */
 
 .testimonials {
@@ -288,62 +336,5 @@ button.sub-default{
 .highlight-text{
   color: #f7941d;
 }
-.section-title {
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 5px 5px 5px 0; /*modified margin instead of the one by Aya*/
-  color: #4d4d4d;
-}
-.section-sub-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 5px 5px 5px 0; /*modified margin instead of the one by Aya*/
-  color: #4d4d4d;
-}
-.section-body-text{
-  font-family: 'Karla', sans-serif;
-  font-size: 15px;
-  color: #4d4d4d;
-  line-height: 1.5;
-  margin-top: 40px;
-}
-.subsection-text-container{
-  padding-left: 25px;
-  display: inline-block;
-  position: absolute;
-  margin-top: -4px;
-}
-.subsection-body-text{
-  font-family: 'Karla', sans-serif;
-  font-size: 15px;
-  color: #4d4d4d;
-  line-height: 1.5;
-  margin-top: 0;
-}
-.subsection-title{
-  font-family: 'Karla', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 5px 5px 0;
-}
-.icon-services{
-  background: #e5eef0;
-  line-height: 2.3em;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-}
-.icon-services:hover{
-  background-color: #f7941d;
-}
-.subsection-container{
-  position: relative;
-  height: 105px;
-  margin-top: 8px;
-}
-.subsection-container-button{
-  text-align: center;
-  margin-top: 4px;
-}
+
+
