@@ -42,17 +42,27 @@
 }
 
 /**** Buttons ****/
-button.default {
+button.default,
+button.sub-default {
   font-family: 'Karla';
   font-size: 15px;
   color: #ffffff;
-  background-color: #29c2e1;
+
   width: 140px;
   height: 38px;
   line-height: 38px;
   border-radius: 38px;
   text-transform: uppercase;
 }
+button.default {
+  background-color: #29c2e1;
+}
 button.default:hover {
   background-color: #178AA1;
+}
+button.sub-default {
+  background-color: #f7941d;
+}
+button.sub-default:hover {
+  background-color: #D97B08;
 }
