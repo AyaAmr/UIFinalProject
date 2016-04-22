@@ -112,7 +112,7 @@ section.startup-section {
 
 /* index page - testimonials */
 section .testimonials {
-  min-height: 500
+  height: 500
 }
 .testimonials blockquote {
   font-style: italic;
@@ -276,19 +276,11 @@ section .grid-items-container {
 .transparent {
   background: #fff;
 }
+
+/* Separators */
 .empty-space {
   height: 95px;
 }
-/*.records {
-  padding-top: 70px;
-  border-top: 1px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 0px;
-  border-style: solid;
-  border-color: #DDE8E8;
-}
-*/
 .colored-separator {
   margin: 70px 0px;
   border-top: 1px;
@@ -298,6 +290,8 @@ section .grid-items-container {
   border-style: solid;
   border-color: #DDE8E8;
 }
+
+/* About us page*/
 .single-record > .col-8 > span {
   font-weight: bold;
   font-size: 60px;
