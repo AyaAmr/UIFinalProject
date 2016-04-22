@@ -1,0 +1,68 @@
+/**** Components Styles (e.g: buttons, icons, etc.) ****/
+
+/**** Icons ****/
+.icon-container {
+  display: inline-block;
+}
+
+.logo {
+  width: 39px;
+  height: 33px;
+  background: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.down-arrow {
+  width: 8px;
+  height: 8px;
+  background: url("../images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.blue-tri {
+  width: 102px;
+  height: 71px;
+  background: url("../images/blue-tri.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.orange-tri {
+  width: 36px;
+  height: 26px;
+  background: url("../images/orange-tri.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+/**** Buttons ****/
+button.default,
+button.sub-default {
+  font-family: 'Karla';
+  font-size: 15px;
+  color: #ffffff;
+
+  width: 140px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 38px;
+  text-transform: uppercase;
+}
+button.default {
+  background-color: #29c2e1;
+}
+button.default:hover {
+  background-color: #178AA1;
+}
+button.sub-default {
+  background-color: #f7941d;
+}
+button.sub-default:hover {
+  background-color: #D97B08;
+}

@@ -1,0 +1,326 @@
+/**** Resets ****/
+*,
+*:after, *:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/**** Clearing floats ****/
+.clear-fix::before,
+.clear-fix::after {
+  content: "";
+  display: table;
+}
+.clear-fix::after{
+  clear: both;
+}
+
+/**** Grid System ****/
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+.row::after{
+  clear: both;
+}
+
+/* 1- This is an attribute selector */
+[class*='col-'] { /* 1 */
+  float: left;
+  padding: 0 30px 0 0;
+  display: block;
+}
+
+/* 1- Floats last ".col-" to the right */
+[class*='col-']:last-of-type { /* 1 */
+  padding-right: 0;
+  float: right;
+}
+
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.6666666667%;
+}
+.col-1 {
+  width: 8.33%;
+}
+
+/**** Basic Styles ****/
+
+/* Used for testing */
+.borderR {
+  outline: 1px solid red;
+}
+.borderB {
+  outline: 1px solid blue;
+}
+
+/*
+Visually hides text,
+however text will be still read by screen readers
+Source: https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/
+*/
+.screen-reader {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;s
+  padding: 0 15px;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 100px;
+}
+section h1,
+.section-title {
+  margin: 0;
+}
+section h1 + p,
+.section-sub-title { /*subtitle*/
+  margin: 5px 0;
+}
+.section-body-text {
+  margin: 29px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+/**** Header ****/
+.banner {
+  height: 50px;
+  line-height: 50px;
+  background-color: #e5eef0;
+}
+.banner p {
+  margin: 0;
+}
+.banner ul {
+  float: right;
+  margin: 0;
+}
+.banner ul li {
+  display: inline-block;
+  padding: 0px 28px;
+}
+.banner ul li:not(:last-of-type) {
+  border-right: 1px solid #d8e3e6;
+}
+.banner ul li:last-of-type {
+  padding-right: 0;
+}
+.banner ul li span {
+  color: #93a1a7;
+  padding-right: 8px;
+}
+.banner ul li span.fa.fa-mobile {
+  font-size: 22px;
+  vertical-align: sub;
+}
+.banner ul li span.fa.fa-envelope-o {
+  font-size: 17px;
+  vertical-align: text-bottom;
+}
+.banner,
+.header nav {
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #93a1a7;
+}
+
+.header {
+  height: 76px;
+  line-height: 76px;
+}
+.header .container {
+  text-align: right;
+}
+.header h1, ul {
+  margin: 0px;
+}
+.header .icon-container {
+  float: left;
+}
+.header .logo {
+  vertical-align: middle;
+}
+.header nav {
+  display: inline-block;
+}
+.header nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.header nav ul li a {
+  border-bottom: 1px solid transparent;
+}
+.header nav ul li a:not(.active):hover {
+  border-bottom: 1px solid #93a1a7;
+}
+.header nav ul li a.active {
+  color: #23282f;
+}
+.header .down-arrow {
+  padding-left: 19px;
+  cursor: pointer;
+}
+.header button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+/**** Footer ****/
+footer {
+  position: relative;
+}
+footer .container {
+  border-top: 1px solid #e5eef0;
+  border-bottom: 1px solid #e5eef0;
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+footer .col-2.icon-container {
+  float: left;
+  padding-left: 0;
+}
+footer .col-4 .col-6 {
+  padding-left: 0;
+}
+footer h3 {
+  font-family: 'Raleway';
+  font-size: 18px;
+  color: #23282f;
+  font-weight: 800;
+}
+footer ul {
+  padding-left: 0px;
+}
+footer ul li,
+.news-letter-form label,
+.news-letter-form input,
+.news-letter-form button,
+.copy-rights {
+  padding: 8px 0;
+  font-family: 'Karla';
+  font-size: 14px;
+  color: #93a1a7;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+footer ul li:first-of-type {
+  padding-top: 0;
+}
+footer ul li a {
+  border-bottom: 1px solid transparent;
+}
+footer ul li a:hover {
+  border-bottom: 1px solid #93a1a7;
+}
+footer ul.contact-details li span {
+  color: #23282f;
+}
+.news-letter-form input {
+  margin-top: 16px;
+  padding: 13px;
+  border: 1px solid #dde8ea;
+  height: 42px;
+}
+.news-letter-form button {
+  margin-left: -5px;
+  height: 42px;
+  width: 42px;
+  vertical-align: bottom;
+  color: #fff;
+  background-color: #29c2e1;
+}
+.news-letter-form button:hover {
+  background-color: #178AA1;
+}
+.copy-rights {
+  text-align: center;
+}
+.copy-rights.container {
+  border: 0;
+  height: 108px;
+  line-height: 108px;
+  padding: 0;
+}
