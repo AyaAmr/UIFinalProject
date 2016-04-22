@@ -324,3 +324,31 @@ footer ul.contact-details li span {
   line-height: 108px;
   padding: 0;
 }
+
+section.page-banner {
+  margin: 0;
+  padding: 0;
+}
+.page-banner {
+  height: 310px;
+  background-color: #8d8d8d;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.page-title {
+  margin: 0;
+  padding: 0;
+}
+.page-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
