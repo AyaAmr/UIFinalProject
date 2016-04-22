@@ -273,3 +273,40 @@ section .grid-items-container {
 .highlight-text{
   color: #f7941d;
 }
+.transparent {
+  background: #fff;
+}
+.empty-space {
+  height: 95px;
+}
+/*.records {
+  padding-top: 70px;
+  border-top: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #DDE8E8;
+}
+*/
+.colored-separator {
+  margin: 70px 0px;
+  border-top: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #DDE8E8;
+}
+.single-record > .col-8 > span {
+  font-weight: bold;
+  font-size: 60px;
+}
+.single-record > .col-8 > p {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.single-record > .col-4 > img {
+  padding-top: 10px;
+}
