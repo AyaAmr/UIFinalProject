@@ -304,7 +304,7 @@ section .grid-items-container {
 .single-record > .col-4 > img {
   padding-top: 10px;
 }
-/* Blog page */
+/* Blog page --- Sidebar*/
 .quick-search-form {
   position: relative;
 }
@@ -352,9 +352,7 @@ ul.sidebar-component__menu {
 
 .sidebar-component__menu li:hover {
   color: #f7941d;
-
 }
-
 .featured-posts__single {
   font-family: 'Karla', sans-serif;
   margin-bottom: 30px;
@@ -381,4 +379,35 @@ ul.sidebar-component__menu {
   font-family: 'Karla', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
+}
+/*Blog Page -- content*/
+.blog-post {
+  max-width: 828px;
+}
+h4.blog-post__heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 14px;
+
+}
+.blog-post__credits {
+  font-family: 'karla', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.blog-post__credits span {
+  color: #f7941d;
+}
+
+.blog-post__excerpt p {
+  font-size: 14px;
+  font-family: 'karla', sans-serif;
+}
+
+.blog-post__excerpt {
+  margin: 45px 0px;
 }
