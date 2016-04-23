@@ -423,6 +423,9 @@ h4.blog-post__heading {
 }
 /***END OF SLICK customizations**/
 /**Pagination**/
+.paginate ul {
+  padding: 0;
+}
 .paginate li {
   width: 42px;
   height: 42px;
@@ -431,6 +434,7 @@ h4.blog-post__heading {
   text-align: center;
   line-height: 42px;
   display: inline-block;
+  margin: 0 5px;
 }
 
 .paginate li.active,

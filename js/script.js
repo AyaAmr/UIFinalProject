@@ -42,8 +42,17 @@ $(document).ready(function(){
   $('.blog-gallery-post').slick({
     dots: false,
     arrows: true,
-    // autoplay: false,
   });
+
+  //Truncate pagination list
+
+  var numberOfPages = $('.paginate ul').children().length;
+  while(numberOfPages > 5) {
+    $('.paginate li:nth-child(5)').replaceWith( "." );
+    numberOfPages = $('.paginate ul').children().length;
+  }
+
+  ///////END of truncation//////////
 
 });
 
