@@ -26,8 +26,6 @@ $(document).ready(function(){
     }
   }
 
-
-
   /* On client logo click show client's qoute */
   $( ".logos-bullets button" ).click(function() {
     var childNum = $(this).index() + 1;
@@ -38,6 +36,13 @@ $(document).ready(function(){
     var childNum = $(this).index() + 1;
     handleClientsLogosSlider (childNum);
 
+  });
+
+  /* Add slider to Blog post */
+  $('.blog-gallery-post').slick({
+    dots: false,
+    arrows: true,
+    // autoplay: false,
   });
 
 });

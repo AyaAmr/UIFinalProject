@@ -411,3 +411,15 @@ h4.blog-post__heading {
 .blog-post__excerpt {
   margin: 45px 0px;
 }
+
+/*Style Slick arrows for the blog-post gallery*/
+.blog-gallery-post > button.slick-next {
+  right:30px;
+}
+
+.blog-gallery-post > button.slick-prev {
+  left:30px;
+  z-index:999;
+}
+/***END OF SLICK customizations**/
+
