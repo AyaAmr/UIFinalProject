@@ -422,4 +422,19 @@ h4.blog-post__heading {
   z-index:999;
 }
 /***END OF SLICK customizations**/
+/**Pagination**/
+.paginate li {
+  width: 42px;
+  height: 42px;
+  background: #29c2e1;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  display: inline-block;
+}
+
+.paginate li.active,
+.paginate li:hover {
+  background: #f7941d;
+}
 
