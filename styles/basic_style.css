@@ -60,7 +60,7 @@ img {
 }
 
 /* 1- Floats last ".col-" to the right */
-[class*='col-']:last-of-type { /* 1 */
+.row [class*='col-']:last-of-type { /* 1 */
   margin-right: 0;
   float: right;
 }
