@@ -480,12 +480,18 @@ ul.sidebar-component__menu {
   min-height: 192px;
   background-color: #e3eef0;
   margin: 65px 0;
+  width: 100%;
 }
 .blog-post__author-info > div {
-  display: inline-block;
+  float: left;
+}
+.blog-post__author-info > div:nth-of-type(2) {
+  width: 74%;
+  margin: 45px 0;
 }
 .author-info__image {
   text-align: center;
+  margin: 4.229167% 43px;
 }
 .author-info__image img {
   width: 122px;
@@ -493,7 +499,6 @@ ul.sidebar-component__menu {
   border-radius: 50%;
   background-size: cover;
   background-position: center center;
-  margin: 18.22916667% 0;
   background-color: #8d8d8d;
 }
 .author-info__name {
@@ -501,6 +506,7 @@ ul.sidebar-component__menu {
   font-size: 15px;
   font-family: 'Karla';
   text-transform: uppercase;
+  margin: 8px 0;
 }
 .author-info__name span {
   color: #f7941d;
@@ -509,4 +515,5 @@ ul.sidebar-component__menu {
   font-size: 14px;
   font-family: 'Open Sans';
   color: #55595f;
+  margin: 17px 0;
 }
