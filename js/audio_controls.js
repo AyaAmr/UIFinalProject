@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function() {
 
   // audio
   var audio = document.getElementById("audio");
@@ -92,4 +92,4 @@ window.onload = function() {
     audio.play();
   });
 
-}
+});

@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function() {
 
   // Video
   var video = document.getElementById("video");
@@ -13,6 +13,7 @@ window.onload = function() {
 
   // Event listener for the play/pause button
   playButton.addEventListener("click", function() {
+    console.log("clicked");
     if (video.paused == true) {
       // Play the video
       video.play();
@@ -92,4 +93,4 @@ window.onload = function() {
     video.play();
   });
 
-}
+});
