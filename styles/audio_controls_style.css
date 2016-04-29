@@ -1,0 +1,44 @@
+#audio-container {
+
+}
+
+#audio-play-pause {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #CDCECF;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  background:url('../images/play-light-icon.png') 50% 50% no-repeat no-repeat #DCDEDD;
+  color: transparent;
+  margin-right: 12px;
+}
+
+#audio-mute {
+  width: 42px;
+  height: 42px;
+  background:url('../images/volume-light-icon.png') 50% 50% no-repeat no-repeat #DCDEDD;
+  color: transparent;
+  margin-left: 5px;
+
+}
+
+#audio-controls {
+  width: 808px;
+  height: 42px;
+  background: #DCDEDD;
+}
+
+#audio-container:hover #audio-controls {
+  opacity: .8;
+}
+#audio-seek-bar {
+  width: 695px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #F39431),
+    color-stop(0, #C7C8C9)
+  );
+}
