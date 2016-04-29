@@ -304,6 +304,7 @@ section .grid-items-container {
 .single-record > .col-4 > img {
   padding-top: 10px;
 }
+
 /* Blog page --- Sidebar*/
 .quick-search-form {
   position: relative;
@@ -380,19 +381,20 @@ ul.sidebar-component__menu {
   font-size: 13px;
   text-transform: uppercase;
 }
+
 /*Blog Page -- content*/
 .blog-post {
   max-width: 828px;
 }
-h4.blog-post__heading {
+.blog-post__heading {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
   margin-top: 35px;
-  margin-bottom: 14px;
-
+  margin-bottom: -7px;
 }
+
 .blog-post__credits {
   font-family: 'karla', sans-serif;
   text-transform: uppercase;
@@ -409,7 +411,7 @@ h4.blog-post__heading {
 }
 
 .blog-post__excerpt {
-  margin: 45px 0px;
+  margin: 30px 0px;
 }
 
 /*Style Slick arrows for the blog-post gallery*/
@@ -422,6 +424,7 @@ h4.blog-post__heading {
   z-index:999;
 }
 /***END OF SLICK customizations**/
+
 /**Pagination**/
 .paginate ul {
   padding: 0;
@@ -436,9 +439,74 @@ h4.blog-post__heading {
   display: inline-block;
   margin: 0 5px;
 }
-
 .paginate li.active,
 .paginate li:hover {
   background: #f7941d;
 }
 
+/* Blog_post */
+.blog-post__content {
+  margin: 33px 0;
+}
+.blog-post__content p,
+.blog-post__content div {
+  margin: 0 0 30px 0;
+}
+.blog-post__content p {
+  font-family: 'Open Sans';
+  color: #55595f;
+  line-height: 1.8;
+}
+.blog-post__accordion {
+  text-transform: uppercase;
+  color: #23282f;
+  font-size: 13px;
+  font-family: 'karla';
+  padding: 9px;
+}
+.blog-post__accordion > div {
+  margin: 0 0 0 98px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.blog-post__accordion > div::before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  color: #f7941d;
+  font-size: 12px;
+  padding: 11px;
+}
+.blog-post__author-info {
+  min-height: 192px;
+  background-color: #e3eef0;
+  margin: 65px 0;
+}
+.blog-post__author-info > div {
+  display: inline-block;
+}
+.author-info__image {
+  text-align: center;
+}
+.author-info__image img {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  margin: 18.22916667% 0;
+  background-color: #8d8d8d;
+}
+.author-info__name {
+  margin-top: 55px;
+  font-size: 15px;
+  font-family: 'Karla';
+  text-transform: uppercase;
+}
+.author-info__name span {
+  color: #f7941d;
+}
+.author-info__description {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  color: #55595f;
+}
