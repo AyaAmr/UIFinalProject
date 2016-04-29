@@ -71,5 +71,11 @@ function handleClientsLogosSlider (childNum) {
   }
 }
 
-
-
+// Adding the Google Map //
+function initMap() {
+    var mapDiv = document.getElementById('map');
+      var map = new google.maps.Map(mapDiv, {
+      center: {lat: 29.986429, lng: 31.438538},
+      zoom: 8
+  });
+}

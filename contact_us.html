@@ -55,12 +55,65 @@
       </div>
     </section><!-- /section.page-banner -->
 <!--  -->
-
-
-
+<!-- The body of the page -->
+<div class="body-wrapper clear-fix">
+  <h2 class="screen-reader">Contact us</h2>
+  <div class="container">
+  <div class="line-separator">
+    <div class="map-wrapper">
+      <h2 class="section-title">Our Location</h2>
+      <p class="section-sub-title">Map Here</p>
+      <div class="row" id="map"></div>
+    </div>
+    <div class="row">
+      <div class="col-4 text-center">
+         <img src="images/contact-us-icon.png">
+         <p>Personal: +8997 879 7980</p>
+         <p>Office: 0447 224 55 22</p>
+      </div>
+       <div class="col-4 text-center">
+         <img src="images/contact-us-icon.png">
+         <p>Personal: +8997 879 7980</p>
+         <p>Office: 0447 224 55 22</p>
+      </div>
+       <div class="col-4 text-center">
+         <img src="images/contact-us-icon.png">
+         <p>Personal: +8997 879 7980</p>
+         <p>Office: 0447 224 55 22</p>
+      </div>
+    </div>
+    </div>
+    <div class="clear-fix">
+    <form action method="post" class="form-info-entery">
+    <h3 class="section-title section-form-title">Contact Form</h3>
+    <div class="row info-entery-row-wrapper">
+      <div class="col-6">
+        <input type="text" class="row info-entery" placeholder="Name">
+      </div>
+      <div class="col-6  no-margin">
+        <input type="text" class="row info-entery" placeholder="Email">
+      </div>
+    </div>
+    <div class="row info-entery-row-wrapper">
+      <div class="col-6">
+        <input type="tel" class="row info-entery" placeholder="Phone">
+      </div>
+      <div class="col-6  no-margin">
+        <input type="url" class="row info-entery" placeholder="Website">
+      </div>
+    </div>
+    <div class="col-12 ">
+      <textarea class="row info-entery field-height" placeholder="Comment"></textarea>
+    </div>
+    <div class="text-center">
+    <button type="submit" class="default ">Submit</button>
+    </div>
+    </form>
+    </div>
+</div>
 <!--  -->
     <footer>
-      <div class="container">
+      <div class="container clear-fix">
         <h1 class="screen-reader">Site Map</h1>
         <div class="row">
           <div class="col-2 icon-container">
@@ -119,5 +172,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script>
   </body>
 </html>
