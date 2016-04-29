@@ -384,9 +384,10 @@ ul.sidebar-component__menu {
 
 /*Blog Page -- content*/
 .blog-post {
-  max-width: 828px;
+  margin-right: 20px;
 }
-.blog-post__heading {
+.blog-post__heading,
+.comments-container h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -395,7 +396,10 @@ ul.sidebar-component__menu {
   margin-bottom: -7px;
 }
 
-.blog-post__credits {
+.blog-post__credits,
+.comment__author-name,
+.comment__date,
+.comment__reply-option {
   font-family: 'karla', sans-serif;
   text-transform: uppercase;
   font-size: 15px;
@@ -511,9 +515,67 @@ ul.sidebar-component__menu {
 .author-info__name span {
   color: #f7941d;
 }
-.author-info__description {
+.author-info__description,
+.comment__content {
   font-size: 14px;
   font-family: 'Open Sans';
   color: #55595f;
   margin: 17px 0;
 }
+
+.comments-container h4 {
+  margin-bottom: 0;
+}
+.comments-container .comment:first-of-type {
+  margin-top: 30px;
+}
+.comment {
+  min-height: 130px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e5eef0;
+  overflow: auto;
+}
+.comment#reply-on-comment {
+  padding-left: 11.5%;
+}
+.comment p {
+  margin: 0 0 16px 0;
+}
+.comment > div {
+  float: left;
+}
+.comment > div:nth-of-type(2) {
+  width: 88.4%;
+}
+.comment#reply-on-comment > div:nth-of-type(2) {
+  width: 86.8%;
+}
+.comment__author-image {
+  text-align: left;
+  margin: 5px 30px 0 0;
+}
+.comment__author-image img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-color: #8d8d8d;
+}
+.comment__author-name::after {
+  content: '|';
+  display: inline-block;
+  padding: 0 11px 0 13px;
+}
+.comment__date {
+  font-size: 14px;
+}
+.comment__reply-option {
+  float: right;
+  color: #f7941d;
+  font-size: 14px;
+}
+.comment__content {
+  padding-right: 30px;
+}
+
