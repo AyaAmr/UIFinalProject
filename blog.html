@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
     <link rel="stylesheet" type="text/css" href="styles/components.css">
     <link rel="stylesheet" type="text/css" href="styles/general_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/video_controls_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/audio_controls_style.css">
+
+
   </head>
   <body>
     <header>
@@ -33,13 +37,19 @@
           <nav>
             <h2 class="screen-reader">Site Map</h2>
             <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Pages</a><span class="down-arrow"></span></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="#" class="active">Blog</a></li>
+              <li class="drop-down-menu-container">Pages<span class="down-arrow"></span>
+                <ul class="drop-down-menu">
+                  <li><a href="">Page A</a></li>
+                  <li><a href="">Page B</a></li>
+                  <li><a href="">Page C</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
           <button class="default">Contact Us</button>
@@ -56,8 +66,10 @@
     </section><!-- /section.page-banner -->
 <!--  -->
     <section>
+      <h2 class="screen-reader">Blog Page Content</h2>
       <div class="row container">
         <aside class="col-3">
+          <h3 class="screen-reader">Side Bar</h3>
           <form class="quick-search-form">
             <input type="text" placeholder="Search now..">
             <button type="submit">Search</button>
@@ -65,12 +77,12 @@
           <div class="sidebar-component">
             <h4 class="sidebar-component__title">Categories</h4>
             <ul class="sidebar-component__menu">
-              <li>Lipsum Category</li>
-              <li>Ipsum generators</li>
-              <li>embarrassing hidden</li>
-              <li>randomised words</li>
-              <li>slightly believable</li>
-              <li>variations of passages</li>
+              <li><a>Lipsum Category</a></li>
+              <li><a>Ipsum generators</a></li>
+              <li><a>embarrassing hidden</a></li>
+              <li><a>randomised words</a></li>
+              <li><a>slightly believable</a></li>
+              <li><a>variations of passages</a></li>
             </ul><!-- /.sidebar-component__menu -->
           </div><!-- /.sidebar-component -->
           <div class="sidebar-component">
@@ -82,6 +94,7 @@
                   <p class="featured-posts__single__title">Post Heading Here</p>
                   <p class="featured-posts__single__comments"><span>10: </span>Comments</p>
                 </div>
+                <a href="" class="link_overlay"></a>
               </div><!-- /.row.featured-posts__single -->
               <div class="row featured-posts__single">
                 <div class="col-4"><img src="images/side-popular-post.png"></div>
@@ -89,6 +102,7 @@
                   <p class="featured-posts__single__title">Post Heading Here</p>
                   <p class="featured-posts__single__comments"><span>10: </span>Comments</p>
                 </div>
+                <a href="" class="link_overlay"></a>
               </div><!-- /.row.featured-posts__single -->
               <div class="row featured-posts__single">
                 <div class="col-4"><img src="images/side-popular-post.png"></div>
@@ -96,6 +110,7 @@
                   <p class="featured-posts__single__title">Post Heading Here</p>
                   <p class="featured-posts__single__comments"><span>10: </span>Comments</p>
                 </div>
+                <a href="" class="link_overlay"></a>
               </div><!-- /.row.featured-posts__single -->
             </div><!-- /.featured-posts -->
           </div><!-- /.sidebar-component -->
@@ -151,10 +166,21 @@
             </div><!-- /.blog-post -->
             <div class="blog-post">
               <div class="blog-post__media">
-                <video width="828" height="334" controls>
-                  <source src="videos/tom.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+                <div id="video-container">
+                  <!-- Video -->
+                  <video id="video" width="828" height="500">
+                    <source src="videos/banner-animation.mp4" type="video/mp4">
+                    <p>
+                      Your browser doesn't support HTML5 video.
+                    </p>
+                  </video>
+                  <!-- Video Controls -->
+                  <div id="video-controls">
+                    <button type="button" id="play-pause" class="play">Play</button>
+                    <input type="range" id="seek-bar" min="0" max="100" value="0">
+                    <button type="button" id="mute">Mute</button>
+                  </div>
+                </div>
               </div>
               <h4 class="blog-post__heading">Blog Heading</h4>
               <div class="blog-post__credits"><p><span>Date: </span>03 Dec 2015 | <span>Posted By:</span> Admin</p></div>
@@ -166,7 +192,21 @@
               <div class="colored-separator"></div>
             </div><!-- /.blog-post -->
             <div class="blog-post">
-              <div class="blog-post__media"><img src="images/blog-post-image.png"></div>
+              <div class="blog-post__media">
+                <div id="audio-container">
+                  <!-- audio -->
+                  <audio id="audio">
+                    <source src="audio/letitgo.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                  <!-- audio Controls -->
+                  <div id="audio-controls">
+                    <button type="button" id="audio-play-pause" class="play">Play</button>
+                    <input type="range" id="audio-seek-bar" min="0" max="100" value="0">
+                    <button type="button" id="audio-mute">Mute</button>
+                  </div>
+                </div>
+              </div>
               <h4 class="blog-post__heading">Blog Heading</h4>
               <div class="blog-post__credits"><p><span>Date: </span>03 Dec 2015 | <span>Posted By:</span> Admin</p></div>
               <div class="blog-post__excerpt">
@@ -179,18 +219,18 @@
           </div><!--/.posts-->
           <div class="paginate">
             <ul>
-              <li class="active">1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-              <li>7</li>
-              <li>8</li>
-              <li>9</li>
-              <li>10</li>
-              <li>11</li>
-              <li>12</li>
+              <li class="active"><a href="#!">1</a></li>
+              <li><a href="#!">2</a></li>
+              <li><a href="#!">3</a></li>
+              <li><a href="#!">4</a></li>
+              <li><a href="#!">5</a></li>
+              <li><a href="#!">6</a></li>
+              <li><a href="#!">7</a></li>
+              <li><a href="#!">8</a></li>
+              <li><a href="#!">9</a></li>
+              <li><a href="#!">10</a></li>
+              <li><a href="#!">11</a></li>
+              <li><a href="#!">12</a></li>
             </ul>
           </div>
         </div><!-- /.col-9 -->
@@ -257,6 +297,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/video_controls.js"></script>
+    <script type="text/javascript" src="js/audio_controls.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

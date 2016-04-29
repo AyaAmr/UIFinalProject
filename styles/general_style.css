@@ -313,9 +313,10 @@ section .grid-items-container {
   padding: 13px;
   border: 1px solid #dde8ea;
   height: 42px;
+  width: 100%;
 }
 .quick-search-form button {
-  text-align: left;
+  text-align: right;
   overflow: hidden;
   text-indent: -9999px;
   background:url('../images/search-icon.png') 50% 50% no-repeat no-repeat #fff;
@@ -324,8 +325,9 @@ section .grid-items-container {
   color: #fff;
   vertical-align: bottom;
   position: absolute;
-  left: 153px;
+  right: 1px;
   top: 1px;
+  font-size: 0;
 }
 .sidebar-component__title {
   font-size: 20px;
@@ -344,7 +346,13 @@ ul.sidebar-component__menu {
   line-height: 35px;
   font-size: 13px;
 }
-.sidebar-component__menu li::after {
+.sidebar-component__menu li a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+.sidebar-component__menu li a::after {
   font-family: FontAwesome;
   position: absolute;
   right: 0px;
@@ -357,6 +365,10 @@ ul.sidebar-component__menu {
 .featured-posts__single {
   font-family: 'Karla', sans-serif;
   margin-bottom: 30px;
+  position: relative;
+}
+.featured-posts__single:hover img {
+  opacity: 0.8;
 }
 .featured-posts__single__title {
   text-transform: uppercase;
@@ -366,6 +378,7 @@ ul.sidebar-component__menu {
 .featured-posts__single__comments {
   font-size: 14px;
   margin-top: 5px;
+  margin-bottom: 0;
 }
 .featured-posts__single__comments span {
   color: #f7941d;
@@ -384,9 +397,14 @@ ul.sidebar-component__menu {
 
 /*Blog Page -- content*/
 .blog-post {
-  max-width: 828px;
+  margin-right: 20px;
 }
-.blog-post__heading {
+.blog-post p {
+  padding-right: 20px;
+}
+.blog-post__heading,
+.comments-container h4,
+.comment-form h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -395,7 +413,10 @@ ul.sidebar-component__menu {
   margin-bottom: -7px;
 }
 
-.blog-post__credits {
+.blog-post__credits,
+.comment__author-name,
+.comment__date,
+.comment__reply-option {
   font-family: 'karla', sans-serif;
   text-transform: uppercase;
   font-size: 15px;
@@ -511,9 +532,227 @@ ul.sidebar-component__menu {
 .author-info__name span {
   color: #f7941d;
 }
-.author-info__description {
+.author-info__description,
+.comment__content {
   font-size: 14px;
   font-family: 'Open Sans';
   color: #55595f;
   margin: 17px 0;
+}
+
+.comments-container h4 {
+  margin-bottom: 0;
+}
+.comments-container .comment:first-of-type {
+  margin-top: 30px;
+}
+.comment {
+  min-height: 130px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e5eef0;
+  overflow: auto;
+}
+.comment#reply-on-comment {
+  padding-left: 11.5%;
+}
+.comment p {
+  margin: 0 0 16px 0;
+}
+.comment > div {
+  float: left;
+}
+.comment > div:nth-of-type(2) {
+  width: 88.4%;
+}
+.comment#reply-on-comment > div:nth-of-type(2) {
+  width: 86.8%;
+}
+.comment__author-image {
+  text-align: left;
+  margin: 5px 30px 0 0;
+}
+.comment__author-image img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-color: #8d8d8d;
+}
+.comment__author-name::after {
+  content: '|';
+  display: inline-block;
+  padding: 0 11px 0 13px;
+}
+.comment__date {
+  font-size: 14px;
+}
+.comment__reply-option {
+  float: right;
+  color: #f7941d;
+  font-size: 14px;
+}
+.comment__content {
+  padding-right: 30px;
+}
+
+.comment-form h4 {
+  margin-top: 90px;
+}
+.comment-form form {
+  margin-top: 25px;
+}
+.comment-form form input,
+.comment-form form textarea {
+  height: 48px;
+  width: 415px;
+  border: 0;
+  background-color: #e3eef0;
+  padding: 20px 25px;
+  font-size: 13px;
+  color: #23282f;
+  font-family: 'karla';
+}
+.comment-form form input::-webkit-input-placeholder,
+.comment-form form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #23282f;
+}
+.comment-form form input {
+  margin-bottom: 15px;
+}
+.comment-form form input:nth-of-type(2n) {
+  margin-left: 15px;
+}
+.comment-form form textarea {
+  width: 850px;
+  height: 160px;
+}
+.comment-form form button {
+  margin-top: 30px;
+}
+
+/* News Page */
+section.news {
+  border-bottom: 1px solid #e5eef0;
+}
+.news-items-container {
+  margin-top: 25px;
+  width: 360px;
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.news-items-container:last-of-type {
+  margin-right: 0;
+}
+.news-item__image,
+.news-item__description {
+  width: 100%;
+  height: 378px;
+  position: relative;
+}
+.news-item__image {
+  background-color: #8d8d8d;
+}
+.news-item__description {
+  background-color: #e5eef0;
+  text-align: center;
+  padding: 30px 40px;
+}
+.news-item:not(.reversed-order) .news-item__description::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 43.9%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 21px solid #e5eef0;
+  border-top: 21px solid transparent;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  z-index: 9999;
+}
+.news-item.reversed-order .news-item__description::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 43.9%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 21px solid #e5eef0;
+  border-right: 21px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 21px solid transparent;
+  z-index: 9999;
+}
+.news-item__description span {
+  display: block;
+}
+.news-item__description #spanDay {
+  font-size: 36px;
+  color: #23282f;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+.news-item__description #spanDate {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.news-item__description .news-item__title {
+  margin-top: 24px;
+}
+.news-item__description .news-item__content {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  line-height: 1.8;
+  color: #55595f;
+}
+.news-item__description button {
+  margin-top: 10px;
+}
+
+/* News Deatils Page */
+.news img{
+  width: 1970px;
+  height: 428px;
+  max-width: 100%;
+  background: #8d8d8d;
+}
+.news-description{
+  width: 1970px;
+  height: 428px;
+  max-width: 100%;
+  background: #e5eef0;
+}
+.news-description p{
+  margin-left: 60px;
+  color: #4d4d4d;
+  text-align: center;
+}
+.news-description-date{
+  margin-left: 500px;
+}
+.news-description h2{
+  margin-top: 30px;
+  margin-left: 450px;
+}
+.news-description-buttons{
+  margin-left: 400px;
+  margin-top: 40px;
+}
+#spanDateSummary{
+  font-size: 60px;
+  font-weight: bold;
+}
+/*#spanDay{
+  color: red;
+  margin-left: 20px;
+  font-size: 60px;
+  font-weight: bold;
+}*/
+.button1{
+  margin-right: 15px;
 }

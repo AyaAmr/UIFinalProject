@@ -33,13 +33,19 @@
           <nav>
             <h2 class="screen-reader">Site Map</h2>
             <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Pages</a><span class="down-arrow"></span></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li class="drop-down-menu-container">Pages<span class="down-arrow"></span>
+                <ul class="drop-down-menu">
+                  <li><a href="">Page A</a></li>
+                  <li><a href="">Page B</a></li>
+                  <li><a href="">Page C</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
           <button class="default">Contact Us</button>
@@ -55,7 +61,31 @@
       </div>
     </section><!-- /section.page-banner -->
 <!--  -->
+    <section>
+      <div class="container">
+        <div>
+          <h2 class="section-title">News</h2>
+          <p class="section-sub-title">featured news</p>
+        </div>
+        <div class="news">
+          <img src="">
+          <div class="news-description">
+            <div class="news-description-date section-sub-title">
+              <span id="spanDay"></span>
+              <br>
+              <span id="spanDate"></span>
+            </div>
+                <h2>News Heading Here</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <div class="news-description-buttons">
+                <button class="default button1">Next</button>
+                <button class="default">Previous</button>
+              </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
 
 <!--  -->
     <footer>
@@ -117,6 +147,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

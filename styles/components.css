@@ -57,7 +57,8 @@ button.sub-default {
 button.default {
   background-color: #29c2e1;
 }
-button.default:hover {
+button.default:hover,
+.flat-buttons button:hover {
   background-color: #178AA1;
 }
 button.sub-default {
