@@ -259,11 +259,16 @@ section h1 + p,
 /**** Footer ****/
 footer {
   position: relative;
+  width: 100%;
+  background: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 footer .container {
   border-top: 1px solid #e5eef0;
   border-bottom: 1px solid #e5eef0;
-  padding-top: 65px;
+  padding-top: 51px;
   padding-bottom: 75px;
 }
 footer .col-2.icon-container {
