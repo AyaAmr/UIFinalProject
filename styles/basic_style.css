@@ -29,6 +29,10 @@ img {
   vertical-align: bottom;
 }
 
+textarea {
+  resize: none;
+}
+
 /**** Clearing floats ****/
 .clear-fix::before,
 .clear-fix::after {
@@ -40,6 +44,9 @@ img {
 }
 
 /**** Grid System ****/
+.row {
+  width: 100%;
+}
 .row::before,
 .row::after {
   content: "";
@@ -52,13 +59,13 @@ img {
 /* 1- This is an attribute selector */
 [class*='col-'] { /* 1 */
   float: left;
-  padding: 0 30px 0 0;
+  margin: 0 2.564102564% 0 0;
   display: block;
 }
 
 /* 1- Floats last ".col-" to the right */
-[class*='col-']:last-of-type { /* 1 */
-  padding-right: 0;
+.row [class*='col-']:last-of-type { /* 1 */
+  margin-right: 0;
   float: right;
 }
 
@@ -66,38 +73,39 @@ img {
   width: 100%;
 }
 .col-11 {
-  width: 91.66%;
+  width: 91.45299145299145%;
 }
 .col-10 {
-  width: 83.33%;
+  width: 82.90598290598291%;
 }
 .col-9 {
-  width: 75%;
+  width: 74.35897435897436%;
 }
 .col-8 {
-  width: 66.66%;
+  width: 65.81196581196582%;
 }
 .col-7 {
-  width: 58.33%;
+  width: 57.26495726495726%;
 }
 .col-6 {
-  width: 50%;
+  width: 48.717948717948715%;
 }
 .col-5 {
-  width: 41.66%;
+  width: 40.17094017094017%;
 }
 .col-4 {
-  width: 33.33%;
+  width: 31.623931623931625%;
 }
 .col-3 {
-  width: 25%;
+  width: 23.076923076923077%;
 }
 .col-2 {
-  width: 16.6666666667%;
+  width: 14.52991452991453%;
 }
 .col-1 {
-  width: 8.33%;
+  width: 5.982905982905983%;
 }
+
 
 /**** Basic Styles ****/
 
@@ -251,11 +259,16 @@ section h1 + p,
 /**** Footer ****/
 footer {
   position: relative;
+  width: 100%;
+  background: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 footer .container {
   border-top: 1px solid #e5eef0;
   border-bottom: 1px solid #e5eef0;
-  padding-top: 65px;
+  padding-top: 51px;
   padding-bottom: 75px;
 }
 footer .col-2.icon-container {
@@ -351,4 +364,22 @@ section.page-banner {
   padding: 0;
   font-size: 15px;
   letter-spacing: 0.1rem;
+}
+
+.link_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  z-index: 0;
+  background-color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  background-color: #000;
 }

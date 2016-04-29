@@ -72,4 +72,73 @@ function handleClientsLogosSlider (childNum) {
 }
 
 
+/* In case the users replys on an existing comment,
+*  then we raise a flag that this is not a new comment.
+*  Also, we keep grap the original comment so that we can append the reply to it
+*/
+var $replyOnComment = false;
+var $originalComment;
+var $newCommentID = '';
+$(document).on('click', '.comment__reply-option a', function(ev){
+  $replyOnComment = true;
+  console.log($replyOnComment);
+  $originalComment = $(this).closest('.comment');
+  $newCommentID = 'id="reply-on-comment"';
+});
 
+/* When the user fills the comment-form in blog_post.html, the form inputs
+*   are validated through client side HTML5 validations, and then the user
+*   comment is appended to the list of comments. This should be re-implemented using
+*   ajax and with serverside validations.
+*/
+$(document).on('click', '.comment-form button[type="submit"]', function(ev){
+
+  var $form = $('.comment-form form')
+  if ($form[0].checkValidity()) {
+    // if the form passed HTML5 validity test
+    ev.preventDefault();
+
+    var $name = $('.comment-form form input#name').val();
+    var $comment = $('.comment-form form textarea#comment').val();
+
+    var $newComment = "<div class='comment'" + $newCommentID + "><div class='comment__author-image'><img src='images/team-member.png' alt=''></div><!-- /.comment__commenter-image --><div><p><span class='comment__author-name'>" +
+      $name +
+      "</span><span class='comment__date'>03 Dec 2015</span><span class='comment__reply-option';><a href=''>Reply</a></span></p><p class='comment__content'>" +
+      $comment +
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></div></div><!-- /.comment -->";
+
+    if(! $replyOnComment ){
+      // append the new comment after the last comment that is present in the .comments-container
+      $('.comments-container .comment').last().after($newComment);
+      // scroll to the last added comment
+      $('body, html').animate({
+        scrollTop: $('.comments-container .comment').last().offset().top
+      }, 600);
+
+    } else {
+      $originalComment.after($newComment);
+      // scroll to the original comment
+      $('body, html').animate({
+        scrollTop: $originalComment.offset().top
+      }, 600);
+      $originalComment = '';
+      $replyOnComment = false;
+      $newCommentID = '';
+    }
+
+    // reset the form fields
+    ($form).find('input, textarea').val('');
+  }
+
+});
+
+// Smooth scrolling to a certain section in the page
+$(document).on('click', 'a', function(ev){
+
+  ev.preventDefault();
+
+  $("body, html").animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 600);
+
+});
