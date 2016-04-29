@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
     <link rel="stylesheet" type="text/css" href="styles/components.css">
     <link rel="stylesheet" type="text/css" href="styles/general_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/video_controls_style.css">
+
   </head>
   <body>
     <header>
@@ -154,10 +156,22 @@
             </div><!-- /.blog-post -->
             <div class="blog-post">
               <div class="blog-post__media">
-                <video width="828" height="334" controls>
-                  <source src="videos/tom.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+                <div id="video-container">
+                  <!-- Video -->
+                  <video id="video" width="828" height="500">
+                    <source src="videos/banner-animation.mp4" type="video/mp4">
+                    <p>
+                      Your browser doesn't support HTML5 video.
+                      <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+                    </p>
+                  </video>
+                  <!-- Video Controls -->
+                  <div id="video-controls">
+                    <button type="button" id="play-pause" class="play">Play</button>
+                    <input type="range" id="seek-bar" min="0" max="100" value="0">
+                    <button type="button" id="mute">Mute</button>
+                  </div>
+                </div>
               </div>
               <h4 class="blog-post__heading">Blog Heading</h4>
               <div class="blog-post__credits"><p><span>Date: </span>03 Dec 2015 | <span>Posted By:</span> Admin</p></div>
@@ -265,6 +279,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/video_controls.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
