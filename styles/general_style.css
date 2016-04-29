@@ -32,6 +32,13 @@
   font-size: 14px;
 }
 
+.slide-thumbnail {
+  position: absolute;
+  width: 73px;
+  height: 81px;
+  border-radius: 50%;
+}
+
 /* Section title & subtitle*/
 .section-info {
   margin: 100px 0 40px 0;
