@@ -387,7 +387,8 @@ ul.sidebar-component__menu {
   margin-right: 20px;
 }
 .blog-post__heading,
-.comments-container h4 {
+.comments-container h4,
+.comment-form h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -579,3 +580,38 @@ ul.sidebar-component__menu {
   padding-right: 30px;
 }
 
+.comment-form h4 {
+  margin-top: 90px;
+}
+.comment-form form {
+  margin-top: 25px;
+}
+.comment-form form input,
+.comment-form form textarea {
+  height: 48px;
+  width: 415px;
+  border: 0;
+  background-color: #e3eef0;
+  padding: 20px 25px;
+  font-size: 13px;
+  color: #23282f;
+  font-family: 'karla';
+}
+.comment-form form input::-webkit-input-placeholder,
+.comment-form form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #23282f;
+}
+.comment-form form input {
+  margin-bottom: 15px;
+}
+.comment-form form input:nth-of-type(2n) {
+  margin-left: 15px;
+}
+.comment-form form textarea {
+  width: 850px;
+  height: 160px;
+}
+.comment-form form button {
+  margin-top: 30px;
+}
