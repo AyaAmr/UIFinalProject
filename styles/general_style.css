@@ -413,6 +413,9 @@ h4.blog-post__heading {
 }
 
 /* News Page */
+section.news {
+  border-bottom: 1px solid #e5eef0;
+}
 .news-items-container {
   margin-top: 25px;
   width: 360px;
