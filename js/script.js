@@ -6,15 +6,41 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
   });
 
+  //Hide all image thumbnails from the slider
+  $('.slide-thumbnail').hide();
+
+  //get number of slides
+
+  var slidesNum = $('.slick-dots').children().length;
+
+  //Append each thumbnail to its equivelant dot
+  for (var i = 1; i <= slidesNum; i++) {
+    $('.slick-dots li:nth-child('+i+')').append($('.home-slider div:nth-child('+i+') > img'));
+  }
+  $(".home-slider > .slick-dots li" ).hover(function() {
+    var dotIndex = $(this).index() + 1
+    $('.slick-dots li:nth-child('+dotIndex+') > img').show()
+    var imgTopPosition = $(this).offset().top;
+    // var imgLeftPosition = $(this).offset().left
+    $('.slick-dots li:nth-child('+dotIndex+') > img').css("top", -100)
+    $('.slick-dots li:nth-child('+dotIndex+') > img').css("left", -20)
+
+  },function() {
+    var dotIndex = $(this).index() + 1
+    $('.slick-dots li:nth-child('+dotIndex+') > img').hide()
+  });
+
+
   $('.clients-qoutes div:not(:first-child)').hide(); //Hide All qoutes except the first one
 
-  $('.clients-logos div:not(:first-child) > .active').hide(); //Hide the second logo version except for 1st element
+  $('.clients-logos > .row div:not(:first-child) > .active').hide(); //Hide the second logo version except for 1st element
 
-  $('.clients-logos div:first-child > .normal').hide(); //Hide the normal logo version for the first slide
+  $('.clients-logos > .row div:first-child > .normal').hide(); //Hide the normal logo version for the first slide
 
 
   /* Get number of logos slides exist*/
-  var logosNum = $('.clients-logos').children().length;
+  var logosNum = $('.clients-logos > .row').children().length;
+
 
   $(".clients-logos").append( "<div class='logos-bullets'></div>" );
 
@@ -32,7 +58,7 @@ $(document).ready(function(){
     handleClientsLogosSlider (childNum);
   });
 
-  $( ".clients-logos div" ).click(function() {
+  $( ".clients-logos > .row div" ).click(function() {
     var childNum = $(this).index() + 1;
     handleClientsLogosSlider (childNum);
 
@@ -51,18 +77,18 @@ $(document).ready(function(){
     $('.paginate li:nth-child(5)').replaceWith( "." );
     numberOfPages = $('.paginate ul').children().length;
   }
+  //END of truncation
 
-  ///////END of truncation//////////
 
 });
 
 function handleClientsLogosSlider (childNum) {
   if( childNum <= 3) { //A silly if condition to hande the cases where child element doesn't exist, this should be more dynamic
 
-    $('.clients-logos div > .active').hide(); //Hide all other active logos ( normalize )
-    $('.clients-logos div > .normal').show(); //Show All original logos ( normalize )
-    $('.clients-logos div:nth-child('+childNum+') > .normal').hide(); //Hide original logo of the clicked element
-    $('.clients-logos div:nth-child('+childNum+') > .active').show(); //Show the current clicked as active
+    $('.clients-logos > .row div > .active').hide(); //Hide all other active logos ( normalize )
+    $('.clients-logos > .row div > .normal').show(); //Show All original logos ( normalize )
+    $('.clients-logos > .row div:nth-child('+childNum+') > .normal').hide(); //Hide original logo of the clicked element
+    $('.clients-logos > .row div:nth-child('+childNum+') > .active').show(); //Show the current clicked as active
     $('.clients-qoutes div').hide();
     $('.clients-qoutes div:nth-child('+childNum+')').show();
     $('.clients-qoutes div:nth-child('+childNum+') div').show(); //To show author div
