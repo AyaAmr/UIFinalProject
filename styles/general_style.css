@@ -763,3 +763,17 @@ section.news {
 .button1{
   margin-right: 15px;
 }
+/*Services*/
+.single-item:hover .icon-color {
+  color: #f7941d;
+}
+.icon-color:hover {
+  background: #fff;
+}
+
+.single-item:hover .single-service-btn {
+  background: #f7941d;
+}
+div.services {
+  margin-bottom: 95px;
+}
