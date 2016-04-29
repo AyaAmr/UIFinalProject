@@ -135,9 +135,7 @@ $(document).on('click', '.comment-form button[type="submit"]', function(ev){
 // Smooth scrolling to a certain section in the page
 $(document).on('click', 'a', function(ev){
 
-  ev.preventDefault();
-
-  $("body, html").animate({
+  $('body, html').animate({
       scrollTop: $( $(this).attr('href') ).offset().top
   }, 600);
 
